@@ -27,8 +27,6 @@ local.properties
 .idea/vcs.xml
 *.iml
 
-.idea/
-.iml
 
 # OS-specific files
 .DS_Store
@@ -38,3 +36,7 @@ local.properties
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+#Android Studio
+*.iml
+/.idea
