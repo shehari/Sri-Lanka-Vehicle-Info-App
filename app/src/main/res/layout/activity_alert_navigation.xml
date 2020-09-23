@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlertNavigation">
+
+    <RelativeLayout
+        android:id="@+id/NavHeader"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="337dp"
+            android:layout_marginBottom="42dp"
+            app:srcCompat="@drawable/notes" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="127dp"
+            android:layout_marginEnd="119dp"
+            android:layout_marginBottom="47dp" />
+
+        <TextView
+            android:id="@+id/textViewnav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="84dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="65dp"
+            android:text="REVENUE LICENSE STATUS"
+            android:textColor="@android:color/background_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutnav"
+        android:layout_width="220dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="158dp"
+        android:background="@drawable/subs_design"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/NavHeader">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4nav"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/subs_panel"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NavHeader">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navpanel"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/subs_panel"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingTop="70dp"
+        android:paddingRight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NavHeader">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableStart="@drawable/car"
+            android:drawablePadding="16dp"
+            android:hint="KA-2020"
+            android:paddingStart="5dp" />
+
+        <Button
+            android:layout_width="305dp"
+            android:layout_height="33dp"
+            android:background="@drawable/shape_subscriberbtn"
+            android:text="Submit"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4nav"
+            android:layout_width="311dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="54dp"
+            android:drawableStart="@drawable/not48"
+            android:fontFamily="sans-serif-black"
+            android:text="GET A REMINDER FOR YOUR NEXT VEHICLE LICENSE DATE"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/revenueAlertNav"
+            android:layout_width="294dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_subscriberbtn"
+            android:text="REVENUE LICENSE ALERT"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

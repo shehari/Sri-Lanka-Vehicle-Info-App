@@ -10,7 +10,7 @@ import android.widget.Button;
 public class LicenseAlertMainPage extends AppCompatActivity {
     private Button HomeSubsBtn;
     private Button HomeUnsubsBtn;
-
+    private Button Profile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,16 @@ public class LicenseAlertMainPage extends AppCompatActivity {
                 openLicenseAlertsubsPage();
             }
         });
+
+        Profile = (Button) findViewById(R.id.Profile);
+        Profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLicenseAlertProfilePage();
+            }
+        });
+
+
                 HomeUnsubsBtn = (Button) findViewById(R.id.HomeUnsubsBtn);
                 HomeUnsubsBtn.setOnClickListener(new View.OnClickListener() {
                                            @Override
@@ -41,6 +51,11 @@ public class LicenseAlertMainPage extends AppCompatActivity {
     public void openLicenseAlertUnsubsPage() {
         Intent intent1 = new Intent(this, AlertUnsubsPage.class);
         startActivity(intent1);
+    }
+
+    public void openLicenseAlertProfilePage() {
+        Intent intent2 = new Intent(this, AlertProfilePage.class);
+        startActivity(intent2);
     }
 
 

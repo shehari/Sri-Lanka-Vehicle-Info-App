@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AlertUnsubsPage">
+    tools:context=".AlertProfilePage">
 
     <RelativeLayout
-        android:id="@+id/UnsubHeader"
+        android:id="@+id/proHeader"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -15,65 +15,77 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="303dp"
-            android:layout_marginBottom="38dp"
-            app:srcCompat="@drawable/titleunsubscribe" />
+            android:layout_marginStart="87dp"
+            android:layout_marginEnd="223dp"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24" />
 
-        <TextView
-            android:id="@+id/textViewTitle"
-            android:layout_width="281dp"
+        <ImageView
+
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="105dp"
-            android:layout_marginEnd="23dp"
-            android:layout_marginBottom="62dp"
-            android:text="UNSUBSCRIBE ALERT SERVICE"
+            android:layout_marginStart="127dp"
+            android:layout_marginEnd="119dp"
+            android:layout_marginBottom="47dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewpro"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="196dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="55dp"
+            android:text="PROFILE"
             android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/sidepanel"
+        android:id="@+id/relativeLayoutpro"
         android:layout_width="220dp"
-        android:layout_height="400dp"
+        android:layout_height="450dp"
         android:layout_marginTop="158dp"
         android:background="@drawable/subs_design"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/UnsubHeader">
+        app:layout_constraintTop_toTopOf="@+id/proHeader">
 
     </RelativeLayout>
 
     <LinearLayout
-        android:id="@+id/textpanel"
+        android:id="@+id/linearLayout4pro"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="400dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/subs_panel"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/UnsubHeader">
+        app:layout_constraintTop_toBottomOf="@id/proHeader">
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/Unsuscriberpanel"
+        android:id="@+id/propanel"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="400dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/subs_panel"
         android:orientation="vertical"
@@ -82,58 +94,72 @@
         android:paddingRight="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UnsubHeader">
+        app:layout_constraintTop_toBottomOf="@+id/proHeader">
 
+        <TextView
+            android:id="@+id/textView2pro"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="20dp"
+            android:padding="16dp"
+            android:paddingStart="-0.6dp"
+            android:text="Anupriya Karunarathne"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawableEnd="@drawable/ic_baseline_colorize_24"
+            android:drawablePadding="16dp"
+            android:hint="Email"
+            android:text="anup@gmail.com" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:drawableStart="@drawable/ic_baseline_local_phone_24"
+            android:drawableEnd="@drawable/ic_baseline_colorize_24"
             android:drawablePadding="16dp"
             android:hint="Contact Number"
-            android:inputType="phone" />
+            android:inputType="phone"
+            android:text="0773456321" />
 
-        <EditText
+        <TextView
+            android:id="@+id/textViewpropwd"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:drawableStart="@drawable/ic_baseline_vpn_key_24"
-            android:drawablePadding="16dp"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            android:drawablePadding="20dp"
+            android:padding="16dp"
+            android:paddingStart="-0.6dp"
+            android:text="********"
+            android:textColor="@android:color/background_dark" />
 
     </LinearLayout>
 
-    <Button
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:background="@drawable/shape_subscriberbtn"
-        android:text="Subscribe"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/Unsuscriberpanel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
-        android:id="@+id/textViewunsub1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
+        android:id="@+id/textView4pro"
+        android:layout_width="197dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="sans-serif-black"
         android:text="Department of Motor Traffic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textpanel" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4pro" />
 
     <TextView
-        android:id="@+id/textViewunsub"
+        android:id="@+id/textView5pro1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:fontFamily="sans-serif-black"
         android:text="Sri Lanka"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewunsub1" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4pro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
