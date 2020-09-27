@@ -9,6 +9,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     private Button alertHome;
+    private Button vehicleSubmit;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,9 +23,24 @@ public class MainActivity extends AppCompatActivity {
                 openLicenseAlertMainPage();
             }
         });
+
+        vehicleSubmit = (Button)findViewById(R.id.detail);
+        vehicleSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openVehicleSubmitNumberPage();
+            }
+        });
     }
+
     public void openLicenseAlertMainPage(){
         Intent intent = new Intent(this, LicenseAlertMainPage.class);
         startActivity(intent);
     }
+
+    public void openVehicleSubmitNumberPage(){
+        Intent submitNumber = new Intent(this,SubmitNumber.class);
+        startActivity(submitNumber);
+    }
+
 }
