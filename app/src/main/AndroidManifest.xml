@@ -9,10 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".InfoViewTwo"></activity>
         <activity android:name=".InfoViewOne" />
         <activity android:name=".ShowDetails" />
         <activity android:name=".SubmitNumber" />
+
+        <activity android:name=".AlertNavigation"></activity>
+        <activity android:name=".AlertProfilePage" />
+
         <activity android:name=".AlertUnsubsPage" />
         <activity android:name=".AlertSubsPage" />
         <activity android:name=".LicenseAlertMainPage" />

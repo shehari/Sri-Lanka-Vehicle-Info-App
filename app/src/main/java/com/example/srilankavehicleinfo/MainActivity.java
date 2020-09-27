@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         alertHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openLicenseAlertMainPage();
+                openRevenueAlertNav();
             }
         });
 
@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void openLicenseAlertMainPage(){
-        Intent intent = new Intent(this, LicenseAlertMainPage.class);
+    public void openRevenueAlertNav(){
+        Intent intent = new Intent(this, AlertNavigation.class);
         startActivity(intent);
     }
 
