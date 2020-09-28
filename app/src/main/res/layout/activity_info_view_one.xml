@@ -6,10 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".InfoViewOne">
 
-    <TextView
-        android:id="@+id/webone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="1" />
+
+    <WebView
+        android:id="@+id/web1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
