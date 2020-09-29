@@ -8,19 +8,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.scwang.wave.MultiWaveHeader;
-
 public class SubmitNumber extends AppCompatActivity {
 
     private Button submitNumber;
-    MultiWaveHeader waveHeader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_submit_number);
 
-        submitNumber = (Button)findViewById(R.id.submitnumber);
+        submitNumber = (Button)findViewById(R.id.submitbtn);
         submitNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,15 +25,6 @@ public class SubmitNumber extends AppCompatActivity {
             }
         });
 
-        waveHeader = findViewById(R.id.wawe_header);
-
-        waveHeader.setVelocity(1);
-        waveHeader.setProgress(1);
-        waveHeader.isRunning();
-        waveHeader.setGradientAngle(45);
-        waveHeader.setWaveHeight(40);
-        waveHeader.setStartColor(Color.RED);
-        waveHeader.setCloseColor(Color.CYAN);
     }
 
     public void openShowDetailsPage(){
