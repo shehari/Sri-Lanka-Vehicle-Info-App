@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="52dp"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:textColor="@android:color/white"
         android:textSize="32sp"
         android:textStyle="bold"
@@ -125,7 +125,7 @@
             android:layout_height="48dp"
             android:layout_marginBottom="60dp"
             android:background="@drawable/shape_btn"
-            android:text="REGISTER"
+            android:text="@string/register"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -146,14 +146,14 @@
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_person_24"
                 android:drawablePadding="16dp"
-                android:hint="Full Name" />
+                android:hint="@string/name" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_local_phone_24"
                 android:drawablePadding="16dp"
-                android:hint="Telephone No"
+                android:hint="@string/tel_no"
                 android:inputType="phone" />
 
             <EditText
@@ -161,14 +161,14 @@
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_email_24"
                 android:drawablePadding="16dp"
-                android:hint="Email" />
+                android:hint="@string/email" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_vpn_key_24"
                 android:drawablePadding="16dp"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:inputType="textPassword" />
 
             <EditText
@@ -176,7 +176,7 @@
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_vpn_key_24"
                 android:drawablePadding="16dp"
-                android:hint="Confirm Password"
+                android:hint="@string/confirm_pw"
                 android:inputType="textPassword" />
 
         </LinearLayout>
@@ -198,7 +198,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="52dp"
             android:layout_marginBottom="20dp"
-            android:text="Sign In"
+            android:text="@string/sign_in"
             android:textColor="@color/color_blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

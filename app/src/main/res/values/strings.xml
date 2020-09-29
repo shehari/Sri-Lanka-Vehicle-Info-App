@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">DMT</string>
 
+    <!--Hansika Perera-->
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password_reset">Password Reset</string>
+    <string name="footer_main">Department of Motor Traffic</string>
+    <string name="footer_second">Sri Lanka</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="submit">SUBMIT</string>
+    <string name="send_code">Send Code</string>
+    <string name="user_name">User Name</string>
+    <string name="email">Email</string>
+    <string name="tel_no">Telephone No</string>
+    <string name="password">Password</string>
+    <string name="confirm_pw">Confirm Password</string>
+    <string name="name">Full Name</string>
+    <string name="new_pw">New Password</string>
+
 </resources>
