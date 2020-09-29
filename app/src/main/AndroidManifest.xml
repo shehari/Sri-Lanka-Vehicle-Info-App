@@ -19,18 +19,39 @@
         <activity android:name=".SubmitNumber" />
 
         <activity android:name=".AlertNavigation"></activity>
+
         <activity android:name=".AlertProfilePage" />
 
         <activity android:name=".AlertUnsubsPage" />
         <activity android:name=".AlertSubsPage" />
         <activity android:name=".LicenseAlertMainPage" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+
+
+        <activity android:name=".LoginPage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity android:name=".SignUp"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity android:name=".PasswordResetMainPage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity android:name=".PasswordResetSecondPage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity android:name=".LoadingPage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
 
         <meta-data
             android:name="preloaded_fonts"
