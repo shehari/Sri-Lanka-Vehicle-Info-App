@@ -18,5 +18,6 @@
     <string name="confirm_pw">Confirm Password</string>
     <string name="name">Full Name</string>
     <string name="new_pw">New Password</string>
+    <string name="load_name">Vehicle Info</string>
 
 </resources>
