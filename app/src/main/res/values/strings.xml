@@ -10,7 +10,7 @@
     <string name="login">LOGIN</string>
     <string name="register">REGISTER</string>
     <string name="submit">SUBMIT</string>
-    <string name="send_code">Send Code</string>
+    <string name="send_code">SEND CODE</string>
     <string name="user_name">User Name</string>
     <string name="email">Email</string>
     <string name="tel_no">Telephone No</string>
