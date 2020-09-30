@@ -64,7 +64,7 @@ public class SignUp extends AppCompatActivity {
                     Toast.makeText(SignUp.this, "Password should be confirmed..", Toast.LENGTH_SHORT).show();
                 }
 
-                else if (TextUtils.isEmpty(cnfrmPW.getText().toString()) == TextUtils.isEmpty(phoneNo.getText().toString())) {
+                else if (TextUtils.isEmpty(cnfrmPW.getText().toString()) == TextUtils.isEmpty(password.getText().toString())) {
                     Toast.makeText(SignUp.this, "Password should be as same as the previous one..", Toast.LENGTH_SHORT).show();
                 }
 
