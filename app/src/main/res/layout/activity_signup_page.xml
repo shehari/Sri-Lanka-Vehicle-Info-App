@@ -142,6 +142,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <EditText
+                android:id="@+id/user_name"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_person_24"
@@ -149,6 +150,7 @@
                 android:hint="@string/name" />
 
             <EditText
+                android:id="@+id/tel_no"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_local_phone_24"
@@ -157,6 +159,7 @@
                 android:inputType="phone" />
 
             <EditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_email_24"
@@ -164,6 +167,7 @@
                 android:hint="@string/email" />
 
             <EditText
+                android:id="@+id/pw"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_vpn_key_24"
@@ -172,6 +176,7 @@
                 android:inputType="textPassword" />
 
             <EditText
+                android:id="@+id/cnfrm_pw"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_vpn_key_24"
