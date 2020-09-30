@@ -172,6 +172,7 @@
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_vpn_key_24"
                 android:drawablePadding="16dp"
+                android:maxLength="8"
                 android:hint="@string/password"
                 android:inputType="textPassword" />
 
@@ -181,6 +182,7 @@
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_vpn_key_24"
                 android:drawablePadding="16dp"
+                android:maxLength="8"
                 android:hint="@string/confirm_pw"
                 android:inputType="textPassword" />
 

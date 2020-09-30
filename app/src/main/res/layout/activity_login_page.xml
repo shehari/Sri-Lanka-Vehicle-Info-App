@@ -154,6 +154,7 @@
             app:layout_constraintVertical_bias="0.268">
 
             <EditText
+                android:id="@+id/user_name"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_person_24"
@@ -161,9 +162,11 @@
                 android:hint="@string/user_name" />
 
             <EditText
+                android:id="@+id/pw"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+                android:maxLength="8"
                 android:drawablePadding="16dp"
                 android:hint="@string/password"
                 android:inputType="textPassword" />
