@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">DMT</string>
+    <string name="submitnumber">Submit Number</string>
+    <string name="details">Vehicle Details</string>
+    <string name="inputfield">Please Submit Vehicle Number to Proceed</string>
+    <string name="inputfield2">Submitted Vehicle Details</string>
+    <string name="textfield">Vehicle Registration Number</string>
+    <string name="buttontext">SUBMIT</string>
+    <string name="dmt">Department Of Motor Traffic</string>
+    <string name="sri">Sri Lanka</string>
+    <string name="owner">AB OWNER</string>
+    <string name="engine">ENGINE NO</string>
+    <string name="vclass">CLASS</string>
+    <string name="make">MAKE</string>
+    <string name="model">MODEL</string>
+    <string name="yom">YOM</string>
+
 
 </resources>
