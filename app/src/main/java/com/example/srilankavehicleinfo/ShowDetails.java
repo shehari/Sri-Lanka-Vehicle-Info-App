@@ -90,7 +90,7 @@ public class ShowDetails extends AppCompatActivity {
         ((TextView) view.findViewById(R.id.textTitle)).setText(getResources().getString(R.string.warning_title));
         ((TextView) view.findViewById(R.id.textMessage)).setText(getResources().getString(R.string.warning_text));
         ((Button) view.findViewById(R.id.buttonwarning)).setText(getResources().getString(R.string.okey));
-        ((ImageView) view.findViewById(R.id.imageIcon)).setImageResource(R.drawable.detailsicon);
+        ((ImageView) view.findViewById(R.id.imageIcon)).setImageResource(R.drawable.warning);
 
         final AlertDialog alertDialog = builder.create();
 
