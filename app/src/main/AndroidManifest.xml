@@ -13,38 +13,53 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-        <activity android:name=".InfoViewTwo"></activity>
-        <activity android:name=".InfoViewOne" />
-        <activity android:name=".ShowDetails" />
-        <activity android:name=".SubmitNumber" />
+        <activity android:name=".InfoViewTwo"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".InfoViewOne"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ShowDetails"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SubmitNumber"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".AlertNavigation"></activity>
+        <activity android:name=".AlertNavigation"
+            android:screenOrientation="portrait"></activity>
 
-        <activity android:name=".AlertProfilePage" />
+        <activity android:name=".AlertProfilePage"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".AlertUnsubsPage" />
-        <activity android:name=".AlertSubsPage" />
-        <activity android:name=".LicenseAlertMainPage" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".AlertUnsubsPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AlertSubsPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LicenseAlertMainPage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"></activity>
 
 
         <activity android:name=".LoginPage"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
 
         <activity android:name=".SignUp"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
 
         <activity android:name=".PasswordResetMainPage"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
 
         <activity android:name=".PasswordResetSecondPage"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
 
         <activity android:name=".LoadingPage"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
