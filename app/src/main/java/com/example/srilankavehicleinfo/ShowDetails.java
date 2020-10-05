@@ -37,7 +37,8 @@ public class ShowDetails extends AppCompatActivity {
         view2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openWebViewTwo();
+//                openWebViewTwo();
+                showWarningDialog2();
             }
         });
 
@@ -62,7 +63,7 @@ public class ShowDetails extends AppCompatActivity {
         ((TextView) view.findViewById(R.id.textTitle)).setText(getResources().getString(R.string.warning_title));
         ((TextView) view.findViewById(R.id.textMessage)).setText(getResources().getString(R.string.warning_text));
         ((Button) view.findViewById(R.id.buttonwarning)).setText(getResources().getString(R.string.okey));
-        ((ImageView) view.findViewById(R.id.imageIcon)).setImageResource(R.drawable.detailsicon);
+        ((ImageView) view.findViewById(R.id.imageIcon)).setImageResource(R.drawable.warning);
 
         final AlertDialog alertDialog = builder.create();
 
@@ -70,6 +71,33 @@ public class ShowDetails extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openWebViewOne();
+//                alertDialog.dismiss();
+            }
+        });
+
+        if(alertDialog.getWindow() != null){
+            alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+        }
+        alertDialog.show();
+    }
+
+    private void showWarningDialog2()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(ShowDetails.this,R.style.AlertDialogTheme);
+        View view = LayoutInflater.from(ShowDetails.this).inflate(R.layout.disclaimer_popup,(ConstraintLayout)findViewById(R.id.layoutDialogContainer));
+        builder.setView(view);
+
+        ((TextView) view.findViewById(R.id.textTitle)).setText(getResources().getString(R.string.warning_title));
+        ((TextView) view.findViewById(R.id.textMessage)).setText(getResources().getString(R.string.warning_text));
+        ((Button) view.findViewById(R.id.buttonwarning)).setText(getResources().getString(R.string.okey));
+        ((ImageView) view.findViewById(R.id.imageIcon)).setImageResource(R.drawable.detailsicon);
+
+        final AlertDialog alertDialog = builder.create();
+
+        view.findViewById(R.id.buttonwarning).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openWebViewTwo();
 //                alertDialog.dismiss();
             }
         });
