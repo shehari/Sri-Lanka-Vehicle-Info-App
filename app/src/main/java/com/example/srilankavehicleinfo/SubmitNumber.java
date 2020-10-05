@@ -8,11 +8,13 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class SubmitNumber extends AppCompatActivity {
 
     private Button submitNumber;
+    EditText numberview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,13 +22,15 @@ public class SubmitNumber extends AppCompatActivity {
         setContentView(R.layout.activity_submit_number);
 
         submitNumber = (Button)findViewById(R.id.submitVNumber);
+        numberview = (EditText) findViewById(R.id.enternumber);
         submitNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if (TextUtils.isEmpty(submitNumber.getText().toString()))
-                {
-                    Toast.makeText(SubmitNumber.this,"Please Enter Vehicle Number", Toast.LENGTH_SHORT);
+                String number = numberview.getText().toString().trim();
+
+                if (number.isEmpty()) {
+                    numberview.setError("Field Can't be Empty");
                 }
 
                 else {
