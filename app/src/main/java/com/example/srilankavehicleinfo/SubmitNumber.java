@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class SubmitNumber extends AppCompatActivity {
 
@@ -17,11 +19,19 @@ public class SubmitNumber extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_submit_number);
 
-        submitNumber = (Button)findViewById(R.id.submitbtn);
+        submitNumber = (Button)findViewById(R.id.submitVNumber);
         submitNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openShowDetailsPage();
+
+                if (TextUtils.isEmpty(submitNumber.getText().toString()))
+                {
+                    Toast.makeText(SubmitNumber.this,"Please Enter Vehicle Number", Toast.LENGTH_SHORT);
+                }
+
+                else {
+                    openShowDetailsPage();
+                }
             }
         });
 
