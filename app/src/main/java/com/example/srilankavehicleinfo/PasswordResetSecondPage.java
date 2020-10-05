@@ -36,7 +36,7 @@ public class PasswordResetSecondPage extends AppCompatActivity {
                     Toast.makeText(PasswordResetSecondPage.this, "Password should be confirmed..", Toast.LENGTH_SHORT).show();
                 }
 
-                else if (TextUtils.isEmpty(cnfrmNewPW.getText().toString()) == TextUtils.isEmpty(newPW.getText().toString())) {
+                else if (TextUtils.isEmpty(cnfrmNewPW.getText().toString()) != TextUtils.isEmpty(newPW.getText().toString())) {
                     Toast.makeText(PasswordResetSecondPage.this, "Password should be as same as the previous one..", Toast.LENGTH_SHORT).show();
                 }
 

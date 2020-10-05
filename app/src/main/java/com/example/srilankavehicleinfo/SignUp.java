@@ -3,6 +3,7 @@ package com.example.srilankavehicleinfo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -18,6 +19,8 @@ public class SignUp extends AppCompatActivity {
     private TextView signInNav;
     private EditText name, email, phoneNo, password, cnfrmPW;
     private Button register;
+
+    private static final Pattern password_Pattern = Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{6,}$");
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,34 +46,43 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (TextUtils.isEmpty(name.getText().toString())) {
-                    Toast.makeText(SignUp.this, "User Name cannot be Empty..", Toast.LENGTH_SHORT).show();
-                    //name.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_baseline_person_24, R.drawable.error, R.drawable.error, R.drawable.error);
-                }
+                String NameInput = name.getText().toString().trim();
+                String EmailInput = email.getText().toString().trim();
+                String ConatactInput = phoneNo.getText().toString().trim();
+                String PasswordInput = password.getText().toString().trim();
+                String CnfrmPasswordInput = cnfrmPW.getText().toString().trim();
 
-                else if (TextUtils.isEmpty(email.getText().toString())) {
-                    Toast.makeText(SignUp.this, "Email cannot be Empty..", Toast.LENGTH_SHORT).show();
+                if (NameInput.isEmpty()) {
+                    name.setError("Field Can't be Empty");
                 }
-
-                else if (TextUtils.isEmpty(phoneNo.getText().toString())) {
-                    Toast.makeText(SignUp.this, "Phone Number cannot be Empty..", Toast.LENGTH_SHORT).show();
+                else if (EmailInput.isEmpty()) {
+                    email.setError("Field Can't be Empty");
                 }
-
-                else if (TextUtils.isEmpty(password.getText().toString())) {
-                    Toast.makeText(SignUp.this, "Password cannot be Empty..", Toast.LENGTH_SHORT).show();
+                else if (!Patterns.EMAIL_ADDRESS.matcher(EmailInput).matches()) {
+                    email.setError("Please Enter a valid Email");
                 }
-
-                else if (TextUtils.isEmpty(cnfrmPW.getText().toString())) {
-                    Toast.makeText(SignUp.this, "Password should be confirmed..", Toast.LENGTH_SHORT).show();
+                else if (ConatactInput.isEmpty()) {
+                    phoneNo.setError("Field Can't be Empty");
                 }
-
-                else if (TextUtils.isEmpty(cnfrmPW.getText().toString()) == TextUtils.isEmpty(password.getText().toString())) {
-                    Toast.makeText(SignUp.this, "Password should be as same as the previous one..", Toast.LENGTH_SHORT).show();
+                else if (ConatactInput.length() != 10) {
+                    phoneNo.setError("Please Enter a Valid Contact Number");
                 }
-
+                else if (PasswordInput.isEmpty()) {
+                    password.setError("Field Can't be Empty");
+                }
+                else if(!password_Pattern.matcher(PasswordInput).matches()){
+                    password.setError("Password is too Week");
+                }
+                else if (CnfrmPasswordInput.isEmpty()) {
+                    cnfrmPW.setError("Field Can't be Empty");
+                }
+                else if(!PasswordInput.equals(CnfrmPasswordInput)){
+                    cnfrmPW.setError("Password is not matched");
+                }
                 else {
                     openSignIn();
                 }
+
             }
         });
     }

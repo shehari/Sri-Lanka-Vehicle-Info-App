@@ -132,6 +132,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="230dp"
             android:layout_height="300dp"
             android:layout_marginBottom="135dp"
@@ -172,7 +173,6 @@
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_vpn_key_24"
                 android:drawablePadding="16dp"
-                android:maxLength="8"
                 android:hint="@string/password"
                 android:inputType="textPassword" />
 
@@ -182,7 +182,6 @@
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_vpn_key_24"
                 android:drawablePadding="16dp"
-                android:maxLength="8"
                 android:hint="@string/confirm_pw"
                 android:inputType="textPassword" />
 
@@ -209,6 +208,32 @@
             android:textColor="@color/color_blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/PW_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.728"
+            app:srcCompat="@drawable/eye" />
+
+        <ImageView
+            android:id="@+id/cnfrmPW_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.938"
+            app:srcCompat="@drawable/eye" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

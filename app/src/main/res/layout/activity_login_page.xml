@@ -166,7 +166,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:drawableStart="@drawable/ic_baseline_vpn_key_24"
-                android:maxLength="8"
+                android:drawableEnd="@drawable/eye"
                 android:drawablePadding="16dp"
                 android:hint="@string/password"
                 android:inputType="textPassword" />
