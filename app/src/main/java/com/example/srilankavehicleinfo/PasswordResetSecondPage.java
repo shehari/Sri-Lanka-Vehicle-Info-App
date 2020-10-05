@@ -25,12 +25,12 @@ public class PasswordResetSecondPage extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_password_reset_second);
 
         pwToLogin = (Button) findViewById(R.id.btn_lpwToLogin);
         newPW = (EditText) findViewById(R.id.new_pw);
-        cnfrmNewPW = (EditText) findViewById(R. id.cnfrm_new_pw);
+        cnfrmNewPW = (EditText) findViewById(R.id.cnfrm_new_pw);
         PWeye = (ImageView) findViewById(R.id.PWeye);
         cnfrmPWeye = (ImageView) findViewById(R.id.cnfrmPWeye);
 
@@ -43,17 +43,13 @@ public class PasswordResetSecondPage extends AppCompatActivity {
 
                 if (PasswordInput.isEmpty()) {
                     newPW.setError("Field Can't be Empty");
-                }
-                else if(!password_Pattern.matcher(PasswordInput).matches()){
+                } else if (!password_Pattern.matcher(PasswordInput).matches()) {
                     newPW.setError("Password is too Week");
-                }
-                else if (CnfrmPasswordInput.isEmpty()) {
+                } else if (CnfrmPasswordInput.isEmpty()) {
                     cnfrmNewPW.setError("Field Can't be Empty");
-                }
-                else if(!PasswordInput.equals(CnfrmPasswordInput)){
+                } else if (!PasswordInput.equals(CnfrmPasswordInput)) {
                     cnfrmNewPW.setError("Password is not matched");
-                }
-                else {
+                } else {
                     openLogin();
                 }
 
@@ -68,9 +64,7 @@ public class PasswordResetSecondPage extends AppCompatActivity {
                     PWeye.setImageResource(R.drawable.hide_eye);
                     PWeye.setTag("hide_eye");
                     newPW.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                }
-
-                else if (PWeye.getTag() != null && PWeye.getTag().toString().equals("hide_eye")) {
+                } else if (PWeye.getTag() != null && PWeye.getTag().toString().equals("hide_eye")) {
                     PWeye.setImageResource(R.drawable.eye);
                     PWeye.setTag("eye");
                     newPW.setTransformationMethod(PasswordTransformationMethod.getInstance());
@@ -87,9 +81,7 @@ public class PasswordResetSecondPage extends AppCompatActivity {
                     cnfrmPWeye.setImageResource(R.drawable.hide_eye);
                     cnfrmPWeye.setTag("hide_eye");
                     cnfrmNewPW.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                }
-
-                else if (cnfrmPWeye.getTag() != null && cnfrmPWeye.getTag().toString().equals("hide_eye")) {
+                } else if (cnfrmPWeye.getTag() != null && cnfrmPWeye.getTag().toString().equals("hide_eye")) {
                     cnfrmPWeye.setImageResource(R.drawable.eye);
                     cnfrmPWeye.setTag("eye");
                     cnfrmNewPW.setTransformationMethod(PasswordTransformationMethod.getInstance());
@@ -100,7 +92,7 @@ public class PasswordResetSecondPage extends AppCompatActivity {
 
     }
 
-    public void openLogin(){
+    public void openLogin() {
         Intent intent = new Intent(this, LoginPage.class);
         startActivity(intent);
     }

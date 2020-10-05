@@ -17,7 +17,7 @@ public class InfoViewTwo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_view_two);
 
-        webView2 =  (WebView)findViewById(R.id.web2);
+        webView2 = (WebView) findViewById(R.id.web2);
         WebSettings webSettings = webView2.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webView2.setWebViewClient(new Callback());
@@ -26,7 +26,7 @@ public class InfoViewTwo extends AppCompatActivity {
 
     private class Callback extends WebViewClient {
         @Override
-        public boolean shouldOverrideKeyEvent(WebView view, KeyEvent event){
+        public boolean shouldOverrideKeyEvent(WebView view, KeyEvent event) {
             return false;
         }
     }

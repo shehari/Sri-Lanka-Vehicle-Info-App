@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class AlertNavigation extends AppCompatActivity {
     private Button revenueAlertNav;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +23,8 @@ public class AlertNavigation extends AppCompatActivity {
             }
         });
     }
-    public void openrevenueAlertNav(){
+
+    public void openrevenueAlertNav() {
         Intent intent = new Intent(this, LicenseAlertMainPage.class);
         startActivity(intent);
     }

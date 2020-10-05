@@ -29,7 +29,7 @@ public class LoginPage extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_login_page);
 
         userName = (EditText) findViewById(R.id.user_name);
@@ -62,16 +62,11 @@ public class LoginPage extends AppCompatActivity {
 
                 if (NameInput.isEmpty()) {
                     userName.setError("Field Can't be Empty");
-                }
-
-                else if (PasswordInput.isEmpty()) {
+                } else if (PasswordInput.isEmpty()) {
                     password.setError("Field Can't be Empty");
-                }
-                else if(!password_Pattern.matcher(PasswordInput).matches()){
+                } else if (!password_Pattern.matcher(PasswordInput).matches()) {
                     password.setError("Password is too Week");
-                }
-
-                else {
+                } else {
                     openMain();
                 }
             }
@@ -85,9 +80,7 @@ public class LoginPage extends AppCompatActivity {
                     PWeye.setImageResource(R.drawable.hide_eye);
                     PWeye.setTag("hide_eye");
                     password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                }
-
-                else if (PWeye.getTag() != null && PWeye.getTag().toString().equals("hide_eye")) {
+                } else if (PWeye.getTag() != null && PWeye.getTag().toString().equals("hide_eye")) {
                     PWeye.setImageResource(R.drawable.eye);
                     PWeye.setTag("eye");
                     password.setTransformationMethod(PasswordTransformationMethod.getInstance());
@@ -98,17 +91,17 @@ public class LoginPage extends AppCompatActivity {
 
     }
 
-    public void openSignUp(){
+    public void openSignUp() {
         Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
     }
 
-    public void openPWReset(){
+    public void openPWReset() {
         Intent intent = new Intent(this, PasswordResetMainPage.class);
         startActivity(intent);
     }
 
-    public void openMain(){
+    public void openMain() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

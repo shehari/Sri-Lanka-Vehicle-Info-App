@@ -21,7 +21,7 @@ public class PasswordResetMainPage extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_password_reset_main);
 
         pwResetSecond = (Button) findViewById(R.id.btn_pwResetSecond);
@@ -40,9 +40,7 @@ public class PasswordResetMainPage extends AppCompatActivity {
 
                 if (TextUtils.isEmpty(code_1.getText().toString()) || TextUtils.isEmpty(code_2.getText().toString()) || TextUtils.isEmpty(code_3.getText().toString()) || TextUtils.isEmpty(code_4.getText().toString())) {
                     Toast.makeText(PasswordResetMainPage.this, "Wrong Code. Please Check Again..", Toast.LENGTH_SHORT).show();
-                }
-
-                else {
+                } else {
                     openPWResetSecond();
                 }
             }
@@ -55,9 +53,7 @@ public class PasswordResetMainPage extends AppCompatActivity {
 
                 if (selectedId == -1) {
                     Toast.makeText(PasswordResetMainPage.this, "Please select an option to send the code..", Toast.LENGTH_SHORT).show();
-                }
-
-                else {
+                } else {
                     pwResetSecond.setVisibility(View.VISIBLE);
                     code_1.setVisibility(View.VISIBLE);
                     code_2.setVisibility(View.VISIBLE);
@@ -72,7 +68,7 @@ public class PasswordResetMainPage extends AppCompatActivity {
         });
     }
 
-    public void openPWResetSecond(){
+    public void openPWResetSecond() {
         Intent intent = new Intent(this, PasswordResetSecondPage.class);
         startActivity(intent);
     }

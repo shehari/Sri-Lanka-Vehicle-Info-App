@@ -29,7 +29,7 @@ public class SignUp extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_signup_page);
 
         signInNav = (TextView) findViewById(R.id.txt_signInNav);
@@ -61,32 +61,23 @@ public class SignUp extends AppCompatActivity {
 
                 if (NameInput.isEmpty()) {
                     name.setError("Field Can't be Empty");
-                }
-                else if (EmailInput.isEmpty()) {
+                } else if (EmailInput.isEmpty()) {
                     email.setError("Field Can't be Empty");
-                }
-                else if (!Patterns.EMAIL_ADDRESS.matcher(EmailInput).matches()) {
+                } else if (!Patterns.EMAIL_ADDRESS.matcher(EmailInput).matches()) {
                     email.setError("Please Enter a valid Email");
-                }
-                else if (ConatactInput.isEmpty()) {
+                } else if (ConatactInput.isEmpty()) {
                     phoneNo.setError("Field Can't be Empty");
-                }
-                else if (ConatactInput.length() != 10) {
+                } else if (ConatactInput.length() != 10) {
                     phoneNo.setError("Please Enter a Valid Contact Number");
-                }
-                else if (PasswordInput.isEmpty()) {
+                } else if (PasswordInput.isEmpty()) {
                     password.setError("Field Can't be Empty");
-                }
-                else if(!password_Pattern.matcher(PasswordInput).matches()){
+                } else if (!password_Pattern.matcher(PasswordInput).matches()) {
                     password.setError("Password is too Week");
-                }
-                else if (CnfrmPasswordInput.isEmpty()) {
+                } else if (CnfrmPasswordInput.isEmpty()) {
                     cnfrmPW.setError("Field Can't be Empty");
-                }
-                else if(!PasswordInput.equals(CnfrmPasswordInput)){
+                } else if (!PasswordInput.equals(CnfrmPasswordInput)) {
                     cnfrmPW.setError("Password is not matched");
-                }
-                else {
+                } else {
                     openSignIn();
                 }
 
@@ -101,9 +92,7 @@ public class SignUp extends AppCompatActivity {
                     PWEye.setImageResource(R.drawable.hide_eye);
                     PWEye.setTag("hide_eye");
                     password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                }
-
-                else if (PWEye.getTag() != null && PWEye.getTag().toString().equals("hide_eye")) {
+                } else if (PWEye.getTag() != null && PWEye.getTag().toString().equals("hide_eye")) {
                     PWEye.setImageResource(R.drawable.eye);
                     PWEye.setTag("eye");
                     password.setTransformationMethod(PasswordTransformationMethod.getInstance());
@@ -120,9 +109,7 @@ public class SignUp extends AppCompatActivity {
                     cnfrmPWEye.setImageResource(R.drawable.hide_eye);
                     cnfrmPWEye.setTag("hide_eye");
                     cnfrmPW.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                }
-
-                else if (cnfrmPWEye.getTag() != null && cnfrmPWEye.getTag().toString().equals("hide_eye")) {
+                } else if (cnfrmPWEye.getTag() != null && cnfrmPWEye.getTag().toString().equals("hide_eye")) {
                     cnfrmPWEye.setImageResource(R.drawable.eye);
                     cnfrmPWEye.setTag("eye");
                     cnfrmPW.setTransformationMethod(PasswordTransformationMethod.getInstance());
@@ -132,7 +119,7 @@ public class SignUp extends AppCompatActivity {
         });
     }
 
-    public void openSignIn(){
+    public void openSignIn() {
         Intent intent = new Intent(this, LoginPage.class);
         startActivity(intent);
     }

@@ -21,7 +21,7 @@ public class SubmitNumber extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_submit_number);
 
-        submitNumber = (Button)findViewById(R.id.submitVNumber);
+        submitNumber = (Button) findViewById(R.id.submitVNumber);
         numberview = (EditText) findViewById(R.id.enternumber);
         submitNumber.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,9 +31,7 @@ public class SubmitNumber extends AppCompatActivity {
 
                 if (number.isEmpty()) {
                     numberview.setError("Field Can't be Empty");
-                }
-
-                else {
+                } else {
                     openShowDetailsPage();
                 }
             }
@@ -41,8 +39,8 @@ public class SubmitNumber extends AppCompatActivity {
 
     }
 
-    public void openShowDetailsPage(){
-        Intent showdetails = new Intent(this,ShowDetails.class);
+    public void openShowDetailsPage() {
+        Intent showdetails = new Intent(this, ShowDetails.class);
         startActivity(showdetails);
     }
 }

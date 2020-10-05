@@ -24,7 +24,7 @@ public class ShowDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_details);
 
-        view1 = (Button)findViewById(R.id.web1);
+        view1 = (Button) findViewById(R.id.web1);
         view1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,7 +33,7 @@ public class ShowDetails extends AppCompatActivity {
             }
         });
 
-        view2 = (Button)findViewById(R.id.web2);
+        view2 = (Button) findViewById(R.id.web2);
         view2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,7 +41,6 @@ public class ShowDetails extends AppCompatActivity {
                 showWarningDialog2();
             }
         });
-
 
 
 //        findViewById(R.id.web1).setOnClickListener(new View.OnClickListener() {
@@ -54,10 +53,9 @@ public class ShowDetails extends AppCompatActivity {
 
     }
 
-    private void showWarningDialog()
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(ShowDetails.this,R.style.AlertDialogTheme);
-        View view = LayoutInflater.from(ShowDetails.this).inflate(R.layout.disclaimer_popup,(ConstraintLayout)findViewById(R.id.layoutDialogContainer));
+    private void showWarningDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(ShowDetails.this, R.style.AlertDialogTheme);
+        View view = LayoutInflater.from(ShowDetails.this).inflate(R.layout.disclaimer_popup, (ConstraintLayout) findViewById(R.id.layoutDialogContainer));
         builder.setView(view);
 
         ((TextView) view.findViewById(R.id.textTitle)).setText(getResources().getString(R.string.warning_title));
@@ -75,16 +73,15 @@ public class ShowDetails extends AppCompatActivity {
             }
         });
 
-        if(alertDialog.getWindow() != null){
+        if (alertDialog.getWindow() != null) {
             alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
         }
         alertDialog.show();
     }
 
-    private void showWarningDialog2()
-    {
-        AlertDialog.Builder builder = new AlertDialog.Builder(ShowDetails.this,R.style.AlertDialogTheme);
-        View view = LayoutInflater.from(ShowDetails.this).inflate(R.layout.disclaimer_popup,(ConstraintLayout)findViewById(R.id.layoutDialogContainer));
+    private void showWarningDialog2() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(ShowDetails.this, R.style.AlertDialogTheme);
+        View view = LayoutInflater.from(ShowDetails.this).inflate(R.layout.disclaimer_popup, (ConstraintLayout) findViewById(R.id.layoutDialogContainer));
         builder.setView(view);
 
         ((TextView) view.findViewById(R.id.textTitle)).setText(getResources().getString(R.string.warning_title));
@@ -102,18 +99,18 @@ public class ShowDetails extends AppCompatActivity {
             }
         });
 
-        if(alertDialog.getWindow() != null){
+        if (alertDialog.getWindow() != null) {
             alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
         }
         alertDialog.show();
     }
 
-    public void openWebViewOne(){
-        Intent viewOne = new Intent(this,InfoViewOne.class);
+    public void openWebViewOne() {
+        Intent viewOne = new Intent(this, InfoViewOne.class);
         startActivity(viewOne);
     }
 
-    public void openWebViewTwo(){
+    public void openWebViewTwo() {
         Intent viewTwo = new Intent(this, InfoViewTwo.class);
         startActivity(viewTwo);
     }
