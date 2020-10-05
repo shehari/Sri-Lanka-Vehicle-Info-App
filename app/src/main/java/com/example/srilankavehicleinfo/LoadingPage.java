@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LoadingPage extends AppCompatActivity {
 
-    private static int SPLASH_SCREEN = 5000;
+    private static int SPLASH_SCREEN = 3500;
 
     Animation topAnim, bottomAnim;
     ImageView logo;
