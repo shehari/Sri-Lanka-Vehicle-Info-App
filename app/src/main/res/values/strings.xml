@@ -42,6 +42,46 @@
     <string name="more_info">More Info</string>
     <string name="download">Download</string>
 
+    <string name="footerval2">Sri Lanka</string>
+    <string name="footerval1">Department Of Motor Traffic</string>
+    <string name="subs_title">SUBSCRIBE</string>
+    <string name="subs_btn">SUBSCRIBE</string>
+    <string name="sub_name_hint">Full Name</string>
+    <string name="sub_name_contact">Contact No</string>
+    <string name="sub_name_mail">Email</string>
+    <string name="sub_name_pwd">Password</string>
+    <string name="sub_title2">Fill out to subscribe</string>
+    <string name="subscribe_title_img">subTitle_img</string>
+    <string name="subscribe_main_img">subscribe_main_img</string>
+
+    <string name="alert_footer2">Sri Lanka</string>
+    <string name="alert_footer1">Department Of Motor Traffic</string>
+    <string name="alert_title">REVENUE LICENSE ALERT</string>
+    <string name="alert_subscribe">Subscribe</string>
+    <string name="alert_profile">Profile</string>
+    <string name="alert_unsub">Unsubscribe</string>
+    <string name="alert_description">Revenue License Alert allows you to get a text reminder for next Vehicle License Date. Simply register on app and subscribe on your alert service to get an alert on your next License Date.</string>
+
+    <string name="profile_footer2">Sri Lanka</string>
+    <string name="profile_footer1">Department Of Motor Traffic</string>
+    <string name="profile_title">PROFILE</string>
+    <string name="profile_name">Anupriya Karunarathne</string>
+    <string name="profile_mail">anup@gmail.com</string>
+    <string name="pro_email">Email</string>
+    <string name="pro_contact">Contact Number</string>
+    <string name="profile_contact">0773456321</string>
+    <string name="pro_pwd">********</string>
+    <string name="profile_image">profile_image</string>
+
+    <string name="unsub_footerTitle2">Sri Lanka</string>
+    <string name="unsub_footerTitle1">Department Of Motor Traffic</string>
+    <string name="unsub_title">UNSUBSCRIBE</string>
+    <string name="unsub_btn">UNSUBSCRIBE</string>
+    <string name="unsub_contact">Contact No</string>
+    <string name="unsub_pwd">Password</string>
+    <string name="unsub_title_img">unsub_title_img</string>
+    <string name="unsub_main_img">unsub_main_img</string>
+
 
 
 </resources>

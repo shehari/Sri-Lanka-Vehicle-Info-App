@@ -1,155 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context=".AlertSubsPage">
 
-    <RelativeLayout
-        android:id="@+id/subHeader"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="274dp"
-            android:layout_marginBottom="39dp"
-            app:srcCompat="@drawable/titlesubscription" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="112dp"
-            android:layout_marginEnd="-11dp"
-            android:layout_marginBottom="63dp"
-            android:text="SUBSCRIBE ALERT SERVICE"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout2"
-        android:layout_width="220dp"
-        android:layout_height="450dp"
-        android:layout_marginTop="138dp"
-        android:background="@drawable/subs_design"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/subHeader">
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/subs_panel"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/subHeader">
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/suscriberpanel"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/subs_panel"
-        android:orientation="vertical"
-        android:paddingLeft="50dp"
-        android:paddingTop="70dp"
-        android:paddingRight="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subHeader">
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:drawableStart="@drawable/ic_baseline_person_24"
-            android:drawablePadding="1dp"
-            android:hint="Name" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:drawableStart="@drawable/ic_baseline_email_24"
-            android:drawablePadding="16dp"
-            android:hint="Email" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:drawableStart="@drawable/ic_baseline_local_phone_24"
-            android:drawablePadding="16dp"
-            android:hint="Contact Number"
-            android:inputType="phone" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
-            android:drawablePadding="16dp"
-            android:hint="Password"
-            android:inputType="textPassword" />
-
-    </LinearLayout>
-
-    <Button
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:background="@drawable/shape_subscriberbtn"
-        android:text="Subscribe"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/suscriberpanel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
-        android:id="@+id/textView4sub"
-        android:layout_width="197dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="84dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Department of Motor Traffic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.565"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
-
-    <TextView
-        android:id="@+id/textView5sub1"
+        android:id="@+id/sub_dep_name2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Sri Lanka"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/footerval2"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.906" />
 
+    <TextView
+        android:id="@+id/sub_dep_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/footerval1"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.906" />
+
+    <View
+        android:id="@+id/signUpTopView"
+        android:layout_width="417dp"
+        android:layout_height="414dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/loading_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/img_sub_mini"
+        android:layout_width="58dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/subscribe_title_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@drawable/finger_icon" />
+
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/subs_title"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="382dp"
+        android:layout_height="480dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/subs_panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signUpTopView"
+        app:layout_constraintVertical_bias="0.809">
+
+        <Button
+            android:id="@+id/btn_subscribe"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="68dp"
+            android:background="@drawable/shape_btn"
+            android:text="@string/subs_btn"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="confirmSubscribe"
+            tools:ignore="OnClick"/>
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="135dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/sub_textName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawablePadding="16dp"
+                android:hint="@string/sub_name_hint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/sub_txtContact"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:autofillHints="no"
+                android:drawableStart="@drawable/ic_baseline_local_phone_24"
+                android:drawablePadding="16dp"
+                android:hint="@string/sub_name_contact"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/sub_TextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="16dp"
+                android:hint="@string/sub_name_mail"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/sub_TextPwd"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+                android:drawablePadding="16dp"
+                android:hint="@string/sub_name_pwd"
+                android:importantForAutofill="no"
+                android:inputType="textPassword" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img_sub_main"
+        android:layout_width="148dp"
+        android:layout_height="99dp"
+        android:layout_marginBottom="390dp"
+        android:contentDescription="@string/subscribe_main_img"
+        app:layout_constraintBottom_toBottomOf="@+id/sub_dep_name1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mainTitle"
+        app:srcCompat="@drawable/test" />
+
+    <TextView
+        android:id="@+id/sub_miniTitle"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/sub_title2"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

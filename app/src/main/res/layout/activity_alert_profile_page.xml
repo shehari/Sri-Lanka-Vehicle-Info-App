@@ -1,165 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AlertProfilePage">
 
-    <RelativeLayout
-        android:id="@+id/proHeader"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="87dp"
-            android:layout_marginEnd="223dp"
-            android:layout_marginBottom="20dp"
-            app:srcCompat="@drawable/ic_baseline_account_circle_24" />
-
-        <ImageView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="127dp"
-            android:layout_marginEnd="119dp"
-            android:layout_marginBottom="47dp"
-            />
-
-        <TextView
-            android:id="@+id/textViewpro"
-            android:layout_width="202dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="196dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="55dp"
-            android:text="PROFILE"
-            android:textColor="@android:color/background_dark"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayoutpro"
-        android:layout_width="220dp"
-        android:layout_height="450dp"
-        android:layout_marginTop="158dp"
-        android:background="@drawable/subs_design"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/proHeader">
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout4pro"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/subs_panel"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/proHeader">
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/propanel"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/subs_panel"
-        android:orientation="vertical"
-        android:paddingLeft="50dp"
-        android:paddingTop="70dp"
-        android:paddingRight="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/proHeader">
-
-        <TextView
-            android:id="@+id/textView2pro"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:drawableStart="@drawable/ic_baseline_person_24"
-            android:drawablePadding="20dp"
-            android:padding="16dp"
-            android:paddingStart="-0.6dp"
-            android:text="Anupriya Karunarathne"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:drawableStart="@drawable/ic_baseline_email_24"
-            android:drawableEnd="@drawable/ic_baseline_colorize_24"
-            android:drawablePadding="16dp"
-            android:hint="Email"
-            android:text="anup@gmail.com" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:drawableStart="@drawable/ic_baseline_local_phone_24"
-            android:drawableEnd="@drawable/ic_baseline_colorize_24"
-            android:drawablePadding="16dp"
-            android:hint="Contact Number"
-            android:inputType="phone"
-            android:text="0773456321" />
-
-        <TextView
-            android:id="@+id/textViewpropwd"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
-            android:drawablePadding="20dp"
-            android:padding="16dp"
-            android:paddingStart="-0.6dp"
-            android:text="********"
-            android:textColor="@android:color/background_dark" />
-
-    </LinearLayout>
-
     <TextView
-        android:id="@+id/textView4pro"
-        android:layout_width="197dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="52dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Department of Motor Traffic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.565"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4pro" />
-
-    <TextView
-        android:id="@+id/textView5pro1"
+        android:id="@+id/profile_footer2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="Sri Lanka"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/profile_footer2"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4pro" />
+        app:layout_constraintVertical_bias="0.906" />
+
+    <TextView
+        android:id="@+id/profile_footer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/profile_footer1"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.906" />
+
+    <View
+        android:id="@+id/profileTopView"
+        android:layout_width="417dp"
+        android:layout_height="414dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/loading_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/profile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/profile_title"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="382dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/subs_panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profileTopView"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="276dp"
+            android:layout_height="319dp"
+            android:layout_marginBottom="64dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <TextView
+                android:id="@+id/textView2pro"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="-10dp"
+                android:drawableStart="@drawable/grey_person"
+                android:drawablePadding="20dp"
+                android:padding="16dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="-2dp"
+                android:text="@string/profile_name"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/txt_proEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawableEnd="@drawable/ic_baseline_colorize_24"
+                android:drawablePadding="16dp"
+                android:hint="@string/pro_email"
+                android:inputType="textEmailAddress"
+                android:text="@string/profile_mail"
+
+                />
+
+            <EditText
+                android:id="@+id/txt_proContact"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:drawableStart="@drawable/ic_baseline_local_phone_24"
+                android:drawableEnd="@drawable/ic_baseline_colorize_24"
+                android:drawablePadding="16dp"
+                android:hint="@string/pro_contact"
+                android:inputType="phone"
+                android:text="@string/profile_contact" />
+
+            <TextView
+                android:id="@+id/textViewpropwd"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableStart="@drawable/grey_key"
+                android:drawablePadding="20dp"
+                android:padding="18dp"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp"
+                android:text="@string/pro_pwd"
+                android:textColor="@android:color/background_dark" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonProfile"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="65dp"
+            android:layout_height="139dp"
+
+            android:layout_marginStart="276dp"
+            android:background="@color/white"
+            android:onClick="confirmProfile"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.594"
+            tools:ignore="OnClick" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="146dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="432dp"
+        android:contentDescription="@string/profile_image"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_footer1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/male" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

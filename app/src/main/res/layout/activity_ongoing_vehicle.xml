@@ -7,9 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".OngoingVehicle">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
         <TextView
@@ -95,9 +95,9 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="20dp"
             android:gravity="center">
-           <!-- <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">-->
+            <!-- <ScrollView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">-->
 
             <GridLayout
                 android:layout_width="match_parent"
@@ -157,7 +157,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/ongoingcard2"
+                    android:id="@+id/carcard2"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -200,6 +200,7 @@
 
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard3"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -243,6 +244,7 @@
 
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard4"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -287,6 +289,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard5"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -329,6 +332,7 @@
 
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard6"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -373,6 +377,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard7"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -417,6 +422,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard8"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -459,6 +465,7 @@
 
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard9"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -503,6 +510,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard10"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -547,7 +555,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/dashcard2"
+                    android:id="@+id/carcard11"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -590,6 +598,7 @@
 
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard12"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -634,6 +643,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard13"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -678,6 +688,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard14"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -722,6 +733,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard15"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -766,6 +778,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard16"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -810,6 +823,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard17"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -853,6 +867,7 @@
 
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/carcard18"
                     android:layout_width="93dp"
                     android:layout_height="93dp"
                     android:layout_margin="10dp"
@@ -898,7 +913,7 @@
 
 
             </GridLayout>
-           <!-- -->
+            <!-- -->
 
         </LinearLayout>
 
