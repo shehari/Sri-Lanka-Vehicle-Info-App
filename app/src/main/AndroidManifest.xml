@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.srilankavehicleinfo">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,46 +12,43 @@
         android:roundIcon="@mipmap/ic_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        <activity android:name=".InfoViewTwo"></activity>
+        <activity android:name=".OngoingDataDemo"></activity>
+        <activity android:name=".activity_ongoing_details" />
+        <activity android:name=".OngoingVehicle" />
+        <activity android:name=".PageExit" />
+        <activity android:name=".RevlicenceData" />
+        <activity android:name=".RevenueDetails" />
+        <activity android:name=".InfoViewTwo" />
         <activity android:name=".InfoViewOne" />
         <activity android:name=".ShowDetails" />
         <activity android:name=".SubmitNumber" />
-
-        <activity android:name=".AlertNavigation"></activity>
-
+        <activity android:name=".AlertNavigation" />
         <activity android:name=".AlertProfilePage" />
-
         <activity android:name=".AlertUnsubsPage" />
         <activity android:name=".AlertSubsPage" />
         <activity android:name=".LicenseAlertMainPage" />
-        <activity android:name=".MainActivity"></activity>
-
-
-        <activity android:name=".LoginPage"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        </activity>
-
-        <activity android:name=".SignUp"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        </activity>
-
-        <activity android:name=".PasswordResetMainPage"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        </activity>
-
-        <activity android:name=".PasswordResetSecondPage"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        </activity>
-
-        <activity android:name=".LoadingPage"
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".LoginPage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".PasswordResetMainPage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".PasswordResetSecondPage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".LoadingPage"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
         <meta-data
             android:name="preloaded_fonts"
