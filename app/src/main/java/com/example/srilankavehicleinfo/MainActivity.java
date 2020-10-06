@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        vehicleSubmit = (Button)findViewById(R.id.detail);
+        vehicleSubmit = (Button) findViewById(R.id.detail);
         vehicleSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,13 +36,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void openRevenueAlertNav(){
+    public void openRevenueAlertNav() {
         Intent intent = new Intent(this, AlertNavigation.class);
         startActivity(intent);
     }
 
-    public void openVehicleSubmitNumberPage(){
-        Intent submitNumber = new Intent(this,SubmitNumber.class);
+    public void openVehicleSubmitNumberPage() {
+        Intent submitNumber = new Intent(this, SubmitNumber.class);
         startActivity(submitNumber);
     }
 

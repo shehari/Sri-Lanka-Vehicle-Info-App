@@ -18,16 +18,16 @@ public class InfoViewOne extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_view_one);
 
-        webView1 =  (WebView)findViewById(R.id.web1);
+        webView1 = (WebView) findViewById(R.id.web1);
         WebSettings webSettings = webView1.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webView1.setWebViewClient(new Callback());
         webView1.loadUrl("https://www.gov.lk/welcome.html");
     }
 
-    class Callback extends WebViewClient{
+    class Callback extends WebViewClient {
         @Override
-        public boolean shouldOverrideKeyEvent(WebView view, KeyEvent event){
+        public boolean shouldOverrideKeyEvent(WebView view, KeyEvent event) {
             return false;
         }
     }
