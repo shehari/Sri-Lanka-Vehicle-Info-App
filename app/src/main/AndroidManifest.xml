@@ -13,6 +13,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
+        <activity android:name=".OngoingDataDemo"></activity>
+        <activity android:name=".activity_ongoing_details" />
+        <activity android:name=".OngoingVehicle" />
+        <activity android:name=".PageExit" />
+        <activity android:name=".RevlicenceData" />
+        <activity android:name=".RevenueDetails" />
+
+
+
+
+
+
+
+
+
+
+
         <activity
             android:name=".InfoViewTwo"
             android:screenOrientation="portrait"></activity>
@@ -71,13 +88,14 @@
         <activity
             android:name=".LoadingPage"
             android:screenOrientation="portrait"
+
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
         <meta-data
             android:name="preloaded_fonts"
