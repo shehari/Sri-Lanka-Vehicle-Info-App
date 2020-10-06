@@ -1,139 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AlertUnsubsPage">
 
-    <RelativeLayout
-        android:id="@+id/UnsubHeader"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
+    <TextView
+        android:id="@+id/unsub_footer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/unsub_footerTitle2"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintVertical_bias="0.906" />
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="303dp"
-            android:layout_marginBottom="38dp"
-            app:srcCompat="@drawable/titleunsubscribe" />
-
-        <TextView
-            android:id="@+id/textViewTitle"
-            android:layout_width="281dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="105dp"
-            android:layout_marginEnd="23dp"
-            android:layout_marginBottom="62dp"
-            android:text="UNSUBSCRIBE ALERT SERVICE"
-            android:textColor="@android:color/background_dark"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/sidepanel"
-        android:layout_width="220dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="158dp"
-        android:background="@drawable/subs_design"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/UnsubHeader">
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/textpanel"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/subs_panel"
-        android:orientation="vertical"
+    <TextView
+        android:id="@+id/unsub_footer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/unsub_footerTitle1"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/UnsubHeader">
+        app:layout_constraintVertical_bias="0.906" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/Unsuscriberpanel"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/subs_panel"
-        android:orientation="vertical"
-        android:paddingLeft="50dp"
-        android:paddingTop="70dp"
-        android:paddingRight="50dp"
+    <View
+        android:id="@+id/unsubTopView"
+        android:layout_width="417dp"
+        android:layout_height="414dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/loading_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UnsubHeader">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:drawableStart="@drawable/ic_baseline_local_phone_24"
-            android:drawablePadding="16dp"
-            android:hint="Contact Number"
-            android:inputType="phone" />
+    <ImageView
+        android:id="@+id/unsub_mini_img"
+        android:layout_width="48dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/unsub_title_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        app:srcCompat="@drawable/unsub_eye" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
-            android:drawablePadding="16dp"
-            android:hint="Password"
-            android:inputType="textPassword" />
-
-    </LinearLayout>
-
-    <Button
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:background="@drawable/shape_subscriberbtn"
-        android:text="Subscribe"
+    <TextView
+        android:id="@+id/unsubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/unsub_title"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/Unsuscriberpanel"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewunsub1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Department of Motor Traffic"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textpanel" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
 
-    <TextView
-        android:id="@+id/textViewunsub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Sri Lanka"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="382dp"
+        android:layout_height="430dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/subs_panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/unsubTopView"
+        app:layout_constraintVertical_bias="0.809">
+
+        <Button
+            android:id="@+id/btn_unsubscribe"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="84dp"
+            android:background="@drawable/shape_btn"
+            android:text="@string/unsub_btn"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="confirmUnSubscribe"
+            tools:ignore="OnClick" />
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="135dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <EditText
+                android:id="@+id/txt_UnsubContactNum"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:drawableStart="@drawable/ic_baseline_local_phone_24"
+                android:drawablePadding="16dp"
+                android:hint="@string/unsub_contact"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/txt_UnsubPwd"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:autofillHints=""
+                android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+                android:drawablePadding="16dp"
+                android:hint="@string/unsub_pwd"
+                android:inputType="textPassword" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="148dp"
+        android:layout_height="113dp"
+        android:layout_marginBottom="446dp"
+        android:contentDescription="@string/unsub_main_img"
+        app:layout_constraintBottom_toBottomOf="@+id/unsub_footer1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewunsub1" />
+        app:layout_constraintTop_toTopOf="@+id/unsubTopView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bell_off" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

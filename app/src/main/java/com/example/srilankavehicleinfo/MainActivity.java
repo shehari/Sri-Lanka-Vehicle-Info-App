@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public CardView cd1, cd2, cd3, cd4, cd5, cd6;
     private CardView vehicleSubmit;
+    private CardView licenseAlert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+        licenseAlert = (CardView)findViewById(R.id.dashcard4);
+        licenseAlert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openRevenueLicenseAlertPage();
+            }
+        });
+
     }
 
     private void openVehicleSubmitNumberPage() {
@@ -69,10 +78,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 i = new Intent(this,SubmitNumber.class);
                 startActivity(i);
                 break;*/
-            case R.id.dashcard4:
-                i = new Intent(this, AlertNavigation.class);
-                startActivity(i);
-                break;
+//            case R.id.dashcard4:
+//                i = new Intent(this, AlertNavigation.class);
+//                startActivity(i);
+//                break;
             case R.id.dashcard5:
                 showdemoDialog();
                 break;
@@ -122,5 +131,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }*/
 
 
+    }
+
+
+    public void openRevenueLicenseAlertPage(){
+        Intent alert = new Intent(this,LicenseAlertMainPage.class);
+        startActivity(alert);
     }
 }
