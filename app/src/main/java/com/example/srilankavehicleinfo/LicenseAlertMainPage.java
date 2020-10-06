@@ -11,6 +11,7 @@ public class LicenseAlertMainPage extends AppCompatActivity {
     private Button HomeSubsBtn;
     private Button HomeUnsubsBtn;
     private Button Profile;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,13 +34,13 @@ public class LicenseAlertMainPage extends AppCompatActivity {
         });
 
 
-                HomeUnsubsBtn = (Button) findViewById(R.id.HomeUnsubsBtn);
-                HomeUnsubsBtn.setOnClickListener(new View.OnClickListener() {
-                                           @Override
-                                           public void onClick(View v) {
-                                               openLicenseAlertUnsubsPage();
-                                           }
-                                       }
+        HomeUnsubsBtn = (Button) findViewById(R.id.HomeUnsubsBtn);
+        HomeUnsubsBtn.setOnClickListener(new View.OnClickListener() {
+                                             @Override
+                                             public void onClick(View v) {
+                                                 openLicenseAlertUnsubsPage();
+                                             }
+                                         }
         );
     }
 
