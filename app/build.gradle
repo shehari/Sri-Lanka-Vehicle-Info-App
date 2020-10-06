@@ -39,4 +39,8 @@ dependencies {
     implementation 'com.scwang.wave:MultiWaveHeader:1.0.0-alpha-1'
 
 
+    //dashbord dependancy (Savindri)
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+
 }
