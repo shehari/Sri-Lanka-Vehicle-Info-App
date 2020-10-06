@@ -20,6 +20,8 @@ public class RevenueDetails extends AppCompatActivity {
         {
             public void onClick(View v)
             {
+                //revnumbertxt
+
                 viewData();
             }
         });
