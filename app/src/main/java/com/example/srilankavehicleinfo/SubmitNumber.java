@@ -5,42 +5,42 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-
-import com.scwang.wave.MultiWaveHeader;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class SubmitNumber extends AppCompatActivity {
 
     private Button submitNumber;
-    MultiWaveHeader waveHeader;
+    EditText numberview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_submit_number);
 
-        submitNumber = (Button)findViewById(R.id.submitnumber);
+        submitNumber = (Button) findViewById(R.id.submitVNumber);
+        numberview = (EditText) findViewById(R.id.enternumber);
         submitNumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openShowDetailsPage();
+
+                String number = numberview.getText().toString().trim();
+
+                if (number.isEmpty()) {
+                    numberview.setError("Field Can't be Empty");
+                } else {
+                    openShowDetailsPage();
+                }
             }
         });
 
-        waveHeader = findViewById(R.id.wawe_header);
-
-        waveHeader.setVelocity(1);
-        waveHeader.setProgress(1);
-        waveHeader.isRunning();
-        waveHeader.setGradientAngle(45);
-        waveHeader.setWaveHeight(40);
-        waveHeader.setStartColor(Color.RED);
-        waveHeader.setCloseColor(Color.CYAN);
     }
 
-    public void openShowDetailsPage(){
-        Intent showdetails = new Intent(this,ShowDetails.class);
+    public void openShowDetailsPage() {
+        Intent showdetails = new Intent(this, ShowDetails.class);
         startActivity(showdetails);
     }
 }

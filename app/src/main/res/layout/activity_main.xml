@@ -1,57 +1,380 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="214dp"
-        android:layout_height="52dp"
-        android:text="ONGOING NUMBER"
+    <TextView
+        android:id="@+id/textView_appName7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Sri Lanka"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113" />
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.906" />
 
-    <Button
-        android:id="@+id/detail"
-        android:layout_width="214dp"
-        android:layout_height="52dp"
-        android:text="VEHICLE DETAILS"
+    <TextView
+        android:id="@+id/textView_appName6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Department Of Motor Traffic"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.278" />
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.906" />
 
-    <Button
-        android:id="@+id/alertHome"
-        android:layout_width="212dp"
-        android:layout_height="53dp"
-        android:text="REVENUE LICENSE STATUS"
+    <View
+        android:id="@+id/signUpTopView"
+        android:layout_width="417dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/loading_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/login"
-        android:layout_width="215dp"
-        android:layout_height="48dp"
-        android:text="LOGIN"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="60dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/LoginTopView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginLeft="40dp"
+            android:text="DASHBOARD"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+
+    </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="3"
+                    android:useDefaultMargins="true">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/dashcard1"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="15dp"
+                        android:layout_marginTop="130dp"
+                        android:layout_marginLeft="10dp"
+                        android:outlineAmbientShadowColor="@color/white" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/ongoinnum2">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5px"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="5px"
+                                android:layout_marginBottom="10dp"
+                                android:text="ONGOING NUMBER"
+                                android:textColor="@color/Black"
+                                android:textSize="16dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/dashcard2"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="15dp"
+                        android:layout_marginTop="130dp"
+                        android:layout_marginLeft="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/revdate">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5px"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="5px"
+                                android:layout_marginBottom="10dp"
+                                android:text="RENEWING DETAILS"
+                                android:textColor="@color/Black"
+                                android:textSize="16dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/detail">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/vdetail2">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5px"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="5px"
+                                android:layout_marginBottom="10dp"
+                                android:text="VEHICLE DETAILS"
+                                android:textColor="@color/Black"
+                                android:textSize="16dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/dashcard4"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/notbell">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5px"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="5px"
+                                android:layout_marginBottom="10dp"
+                                android:text="ALERT ACTIVATION"
+                                android:textColor="@color/Black"
+                                android:textSize="16dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/dashcard5"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/exiiit">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5px"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="5px"
+                                android:layout_marginBottom="10dp"
+                                android:text="EXIT"
+                                android:textColor="@color/Black"
+                                android:textSize="16dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/dashcard6">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="40dp"
+                                android:src="@drawable/logoutdash1">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5px"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="5px"
+                                android:layout_marginBottom="10dp"
+                                android:text="LOGOUT"
+                                android:textColor="@color/Black"
+                                android:textSize="16dp"
+                                android:textStyle="bold">
+
+                            </TextView>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+
+
+            </LinearLayout>
+<!--        </ScrollView>-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

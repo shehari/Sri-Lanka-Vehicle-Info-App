@@ -28,14 +28,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dmt_logo" />
+        app:srcCompat="@drawable/test" />
 
     <TextView
         android:id="@+id/textView_appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="Vehicle Info"
+        android:text="@string/load_name"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -55,7 +55,7 @@
         android:layout_marginTop="200dp"
         android:layout_marginEnd="100dp"
         android:fontFamily="sans-serif-thin"
-        android:text="Department Of Motor Traffic"
+        android:text="@string/footer_main"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="16sp"
@@ -74,7 +74,7 @@
         android:layout_marginTop="200dp"
         android:layout_marginEnd="100dp"
         android:fontFamily="sans-serif-thin"
-        android:text="Sri Lanka"
+        android:text="@string/footer_second"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="16sp"
