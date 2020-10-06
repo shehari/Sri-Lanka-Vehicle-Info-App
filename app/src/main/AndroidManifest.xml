@@ -13,12 +13,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
+
         <activity android:name=".OngoingDataDemo"></activity>
         <activity android:name=".activity_ongoing_details" />
         <activity android:name=".OngoingVehicle" />
         <activity android:name=".PageExit" />
         <activity android:name=".RevlicenceData" />
         <activity android:name=".RevenueDetails" />
+
+
+        <activity android:name=".TrafficHomePage"></activity>
+        
+
+
+      
+
+
+
 
 
 
